@@ -5,7 +5,7 @@ Predicting Stock Price Movement with LSTMs
 Dipankar Roy
 
 #### Executive summary
-
+We will try to create a predictive model that can forecast the directional movement of the S&P 500 with a classification accuracy moderately better than random chance (50%). While creating a perfectly accurate prediction is highly unlikely due to the complex and semi-random nature of financial markets, the goal is to develop a model that demonstrates statistically significant predictive power, providing a modest edge in forecasting market trends.
 
 #### Rationale
 Why should anyone care about this question?
@@ -37,8 +37,8 @@ What methods are you using to answer the question?
     A. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
 
     B. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
-    
-    C. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
+    C. A Long Short-Term Memory (LSTM) neural network will be the primary model used for prediction. LSTMs are a type of recurrent neural network (RNN) well-suited for time-series forecasting because they can effectively learn long-term dependencies in sequential data.
+    D. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
 
 4. Model Evaluation: The model's performance will be evaluated based on its ability to classify the next day's movement. Key metrics will include Accuracy, Precision, Recall, and the F1-Score. A confusion matrix will also be generated to visualize the model's performance on a held-out test dataset.
 
@@ -51,7 +51,7 @@ I've created the baseline model using Logistic Regression. The results indicate 
 #### Next steps
 What suggestions do you have for next steps?
 
-Next steps will be to add the Gradient Boosting Machine and Support Vector Machine models and compare their performance against the baseline.
+Next steps will be to add the Gradient Boosting Machine, Support Vector Machine and LSTM models and compare their performance against the baseline.
 
 #### Outline of project
 
