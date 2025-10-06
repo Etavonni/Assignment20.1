@@ -1,5 +1,5 @@
 ### Project Title
-Predicting Stock Price Movement with LSTMs
+Predicting Stock Price Movement with Gradient boosting, SVMs and LSTMs
 
 **Author**
 Dipankar Roy
