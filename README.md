@@ -1,0 +1,61 @@
+### Project Title
+Predicting Stock Price Movement with LSTMs
+
+**Author**
+Dipankar Roy
+
+#### Executive summary
+
+
+#### Rationale
+Why should anyone care about this question?
+
+Financial Application: A model with predictive accuracy can provide a valuable edge for developing automated trading strategies, enhancing portfolio management, and improving financial risk assessment for investors and institutions.
+
+Academic Insight: The project serves as a practical test of the Efficient Market Hypothesis, which posits that asset prices fully reflect all available information, making it impossible to consistently "beat the market." By attempting to find predictable patterns, this research contributes to the ongoing debate about market efficiency.
+
+#### Research Question
+What are you trying to answer?
+
+Can a machine learning model, specifically a Long Short-Term Memory (LSTM) network, accurately predict the next day's directional movement (up or down) of the S&P 500 index using historical price data, technical indicators, and key macroeconomic variables?
+
+#### Data Sources
+What data will you use to answer you question?
+
+Historical S&P 500 Data: Daily open, high, low, close, and volume data will be obtained using the yfinance library in Python, which pulls data from Yahoo Finance.
+
+Macroeconomic Data: Key economic indicators such as the Federal Funds Rate, Consumer Price Index (CPI), and GDP growth rates will be sourced from the Federal Reserve Economic Data (FRED) database.
+
+#### Methodology
+What methods are you using to answer the question?
+
+1. Data Preprocessing: The initial phase will involve cleaning the data, handling any missing values, and aligning the different time-series datasets.
+
+2. Feature Engineering: New features will be created from the raw data to improve model performance. This will include calculating various technical indicators such as the Simple Moving Average (SMA), Relative Strength Index (RSI), and Moving Average Convergence Divergence (MACD).
+
+3. Modeling: We will use the following models:
+    A. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
+
+    B. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
+    
+    C. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
+
+4. Model Evaluation: The model's performance will be evaluated based on its ability to classify the next day's movement. Key metrics will include Accuracy, Precision, Recall, and the F1-Score. A confusion matrix will also be generated to visualize the model's performance on a held-out test dataset.
+
+
+#### Results
+What did your research find?
+
+I've created the baseline model using Logistic Regression. The results indicate that the baseline model is only able to achieve 0.4453 accuracy. It means that this simple model is not sufficient to answer the questions. It can be used to compare other advanced models. 
+
+#### Next steps
+What suggestions do you have for next steps?
+
+Next steps will be to add the Gradient Boosting Machine and Support Vector Machine models and compare their performance against the baseline.
+
+#### Outline of project
+
+https://github.com/Etavonni/Assignment20.1
+
+
+##### Contact and Further Information
