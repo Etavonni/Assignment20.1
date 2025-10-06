@@ -34,10 +34,14 @@ What methods are you using to answer the question?
 2. Feature Engineering: New features will be created from the raw data to improve model performance. This will include calculating various technical indicators such as the Simple Moving Average (SMA), Relative Strength Index (RSI), and Moving Average Convergence Divergence (MACD).
 
 3. Modeling: We will use the following models:
-     A. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
-     B. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
-     C. A Long Short-Term Memory (LSTM) neural network will be the primary model used for prediction. LSTMs are a type of recurrent neural network (RNN) well-suited for time-series forecasting because they can effectively learn long-term dependencies in sequential data.
-     D. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
+
+3A. Gradient Boosting Machines : Gradient Boosting is an ensemble technique that builds a strong predictive model by combining many "weak" decision tree models sequentially. They excel when the problem is framed with well-engineered features (like moving averages, RSI, and macroeconomic data).
+
+3B. Support Vector Machine : SVM is a powerful classification algorithm that works by finding the optimal hyperplane that best separates the data points of different classes. By using the "kernel trick," SVMs can efficiently handle high-dimensional and non-linear problems.
+
+3C. A Long Short-Term Memory (LSTM) neural network will be the primary model used for prediction. LSTMs are a type of recurrent neural network (RNN) well-suited for time-series forecasting because they can effectively learn long-term dependencies in sequential data.
+
+3D. A simpler model, like Logistic Regression, will be used as a baseline for performance comparison.
 
 5. Model Evaluation: The model's performance will be evaluated based on its ability to classify the next day's movement. Key metrics will include Accuracy, Precision, Recall, and the F1-Score. A confusion matrix will also be generated to visualize the model's performance on a held-out test dataset.
 
